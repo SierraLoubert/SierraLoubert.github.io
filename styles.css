@@ -69,6 +69,15 @@
 
     }
 
+    /* main {
+
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #000;
+
+     } */
+
 
 
     .logo {
@@ -128,9 +137,27 @@
     }
 
     .menu-container {
-        position: relative;
+        display:flex;
+        flex-direction: column;
         text-align: center;
         color: white;
+        gap: 1.5rem;
+      }
+
+      .menu-container img {
+
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0px;
+        width: 100%;
+        z-index: -1;
+        min-width: 500px;
+
+      }
+
+      .menu-container a {
+
       }
       
        
@@ -470,10 +497,23 @@
         text-decoration: none;
         margin: 20px 0;
         transition: color 0.3s ease;
+        
       }
   
       .overlay-menu nav a:hover {
         color: #aaa;
+      }
+
+      .overlay-menu a{
+        font-family: "Merriweather Sans";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration: none;
+        color: #74698C;
+
+
       }
   
       .close-button {
@@ -607,21 +647,37 @@
         width: 300%;
         height: auto;
         object-fit: cover;
+
     }
 
     .container:nth-of-type(odd) div:nth-of-type(1) img {
 
-        object-position: -115vw;
+         object-position: -110vw; 
  
     }
     
 
     .container:nth-of-type(even) div:nth-of-type(1) img {
 
-        object-position: -80vw;
+         object-position: -80vw; 
 
     }
 
+    .product_text-block{
+        width: 100%;
+        text-align: center;
+        background-color: #EBEDC8;
+        color: #74698C;
+        padding: 1rem 2vw;
+        padding-bottom: 800px;
+
+    }
+
+    .product_text-block a {
+
+        margin-left: auto;
+        margin-right: auto;
+    }
  
     .twogrid {
         display: grid;
@@ -638,15 +694,7 @@
         grid-area: right;
     } 
 
-    .product_text-block{
-        width: 100%;
-        text-align: center;
-        background-color: #EBEDC8;
-        color: #74698C;
-        padding: 1rem;
-        padding-bottom: 700px;
 
-    }
 
     .pink_bg {
         background-color: var(--pink);
@@ -956,6 +1004,60 @@
             height: 19rem;
         }
 
+
+        
+
+    
+    .Mountains div div:nth-child(1){
+
+       
+        
+        max-height: 700px;
+        
+    }
+
+    .Mountains img {
+        width: 200%;
+
+    }
+
+    .container:nth-of-type(odd) div:nth-of-type(1) img {
+
+         object-position: -70vw; 
+ 
+    }
+    
+
+    .container:nth-of-type(even) div:nth-of-type(1) img {
+
+         object-position: -40vw; 
+
+    }
+
+
+
+    .Mountains > div:nth-of-type(1) {
+
+        margin-top: 20px;
+    }
+
+    .product_text-block{
+
+       
+        padding: 1rem 20vw;
+        padding-bottom: 800px;
+
+        
+
+    }
+
+    
+
+
+
+        
+ 
+
     }
 
     /* Large devices (laptops/desktops, 992px and up) */
@@ -964,6 +1066,48 @@
         .project-description{
             height: 15rem;
         }
+
+        .project-description{
+            height: 19rem;
+        }
+
+
+        
+
+    
+    .Mountains div div:nth-child(1){
+
+       
+        max-height: 45vw;
+        /* max-height: 80vw; */
+        
+    }
+
+    .Mountains img {
+        width: 100%;
+
+    }
+
+    .container:nth-of-type(odd) div:nth-of-type(1) img {
+
+         object-position: -20vw; 
+ 
+    }
+    
+
+    .container:nth-of-type(even) div:nth-of-type(1) img {
+
+         object-position: 20vw; 
+
+    }
+
+
+
+
+
+       
+
+
     }
     
     /* Extra large devices (large laptops and desktops, 1200px and up) */
