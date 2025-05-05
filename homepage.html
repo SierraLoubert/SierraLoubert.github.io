@@ -179,26 +179,26 @@
         </div>
 
     </footer>
-
     <script>
-        const openMenu = document.getElementById('openMenu');
-        const closeMenu = document.getElementById('closeMenu');
-        const overlayMenu = document.getElementById('overlayMenu');
-      
-        openMenu.addEventListener('click', () => {
-          overlayMenu.classList.add('active');
-        });
-      
-        closeMenu.addEventListener('click', () => {
-          overlayMenu.classList.remove('active');
-        });
-      
-        document.addEventListener('keydown', (e) => {
-          if (e.key === 'Escape') {
-            overlayMenu.classList.remove('active');
-          }
-        });
-      </script>
+      const openMenu = document.getElementById('openMenu');
+      const closeMenu = document.getElementById('closeMenu');
+      const overlayMenu = document.getElementById('overlayMenu');
     
+      openMenu.addEventListener('click', () => {
+        overlayMenu.classList.add('active');
+      });
+    
+      closeMenu.addEventListener('click', () => {
+        overlayMenu.classList.remove('active');
+      });
+    
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          overlayMenu.classList.remove('active');
+        }
+      });
+    </script>
+    
+
 </body>
 </html>
