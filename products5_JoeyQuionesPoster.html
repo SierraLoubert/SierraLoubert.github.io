@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForEverHome Rescue | Sierra's Studio</title>
+  <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+      <header>
+        <button class="menu-button" id="openMenu">&#9776;</button>
+        <section class="overlay-menu" id="overlayMenu">
+         <button class="close-button" id="closeMenu">&times;</button>
+         <div class="menu-container">
+             <div>
+                 <img src="Svg/menu/menu_homepagemountain.svg" alt="homepage menu tab">
+             </div>
+             <div class="menu_text-block">
+                 <a class="menutext" class="menutab" href="homepage.html"> <p>Homepage</p></a>
+             </div>
+         </div>
+         <div class="menu-container">
+             <div>
+                 <img src="Svg/menu/menu_aboutmountain.svg" alt="about menu tab">
+             </div>
+             <div class="menu_text-block">
+                 <a class="menutext" class="menutab" href="aboutus_page.html"> <p>About</p></a>
+             </div>
+         </div>
+         <div class="menu-container">
+             <div>
+                 <img src="Svg/menu/menu_servicesmountain.svg" alt="services menu tab">
+             </div>
+             <div class="menu_text-block">
+                 <a class="menutext" class="menutab" href="service_page.html"> <p>Services</p></a>
+             </div>
+         </div>
+         <div class="menu-container">
+             <div>
+                 <img src="Svg/menu/menu_productsmountain.svg" alt="product menu tab">
+             </div>
+             <div class="menu_text-block">
+                 <a class="menutext" class="menutab" href="products.html"> <p>Product</p></a>
+             </div>
+         </div>
+         <div class="menu-container">
+             <div>
+                 <img src="Svg/menu/menu_contactusmountain.svg" alt="contact menu tab">
+             </div>
+             <div class="menu_text-block">
+                 <a class="menutext" class="menutab" href="contactus.html"> <p>Contact</p></a>
+             </div>
+         </div>
+ 
+       </section>
+        <script>
+         const openMenu = document.getElementById('openMenu');
+         const closeMenu = document.getElementById('closeMenu');
+         const overlayMenu = document.getElementById('overlayMenu');
+       
+         openMenu.addEventListener('click', () => {
+           overlayMenu.classList.add('active');
+         });
+       
+         closeMenu.addEventListener('click', () => {
+           overlayMenu.classList.remove('active');
+         });
+       
+         document.addEventListener('keydown', (e) => {
+           if (e.key === 'Escape') {
+             overlayMenu.classList.remove('active');
+           }
+         });
+       </script>
+         <a href="homepage.html" class="logo"> <img src="Svg/Logo.svg" alt="Sierra's Studio Logo"></a>
+     </header>
+    <main class="product 1">
+        <section>
+            <h class="projectpagessize">Joey Quiones Poster</h1>
+        </section>
+        <section class="images-movex"> 
+            <img src="A2_Loubert_Content/Main Project Folder/Project 5/StephenLBarstow_Poster 1.png" alt="StephenLBarstow Poster">
+            <img src="A2_Loubert_Content/Main Project Folder/Project 5/StephenLBarstow_PosterMockup.png" alt="StephenLBarstow Poster in a room">
+            <img src="A2_Loubert_Content/Main Project Folder/Project 5/StephenLBarstow_PosterMockup2.png" alt="poster with wooden tube">
+            <img src="A2_Loubert_Content/Main Project Folder/Project 5/StephenLBarstow_PosterMockup4_Window.png" alt="two poster on the wooden and cerment">
+            <img src="A2_Loubert_Content/Main Project Folder/Project 5/StephenLBarstow_PosterMockup5_Website.png" alt="Someone holding the poster">
+            <img src="A2_Loubert_Content/Main Project Folder/Project 5/StepenLBarstow_PosterMockup3.png" alt="two poster">
+        </section>
+        <script>
+            const scrollGallery = document.getElementById('drag-scroll-gallery');
+          
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+          
+            scrollGallery.addEventListener('mousedown', (e) => {
+              isDown = true;
+              scrollGallery.classList.add('active');
+              startX = e.pageX - scrollGallery.offsetLeft;
+              scrollLeft = scrollGallery.scrollLeft;
+            });
+          
+            scrollGallery.addEventListener('mouseleave', () => {
+              isDown = false;
+              scrollGallery.classList.remove('active');
+            });
+          
+            scrollGallery.addEventListener('mouseup', () => {
+              isDown = false;
+              scrollGallery.classList.remove('active');
+            });
+          // Mouse events for desktop
+            scrollGallery.addEventListener('mousemove', (e) => {
+              if (!isDown) return;
+              e.preventDefault();
+              const x = e.pageX - scrollGallery.offsetLeft;
+              const walk = (x - startX) * 2;  // Adjust scroll speed
+              scrollGallery.scrollLeft = scrollLeft - walk;
+            });
+          
+            scrollGallery.addEventListener('touchstart', (e) => {
+              startX = e.touches[0].pageX;
+              scrollLeft = scrollGallery.scrollLeft;
+            });
+          // Touch events for mobile
+            scrollGallery.addEventListener('touchmove', (e) => {
+              const x = e.touches[0].pageX;
+              const walk = (x - startX) * 1.5;  // Adjust scroll speed
+              scrollGallery.scrollLeft = scrollLeft - walk;
+            });
+          </script>
+          
+        <section class="productrightmountain">
+            <img class="positionrightmountain" src="Svg/FurEverHome_Rescue_Moutain.svg" alt="Mountain Pink and Cream Color">
+             </section>
+        <section class="project-description"> 
+            <p>This poster Joey Quiones Poster was created for my Typography class, taught by Professor David Stairs. The project explored the use of scale, proportion, and hierarchy through the arrangement of text on a poster. We were tasked with creating a grid system to help align our designs. One of the main challenges in this project was fitting overlapping words into a single area while maintaining readability. The text was arranged in a clear hierarchy, and light colors were used to draw attention against the black background. The 45-degree tilt was inspired by a poster featured in our class textbook Typographic Design: Form and Communication edition 7, which also influenced the decision to tilt the grid and position the text accordingly. All layouts and design work were done in InDesign.  </p>
+        </section>
+        </main>
+    <footer>
+        <div class="more-products">
+            <h2>See More Products?</h2>
+        </div>
+        <div class="projects">
+            <a href="products1_FurEverHome.html"><img src="Svg/onemountain.svg" alt="FurEverHome Logo"></a>
+            <a href="products2_KingofGames.html"><img src="Svg/twomountain.svg" alt="King of Games"></a>
+            <a href="products3_GrandTraverseFlyer.html"><img src="Svg/threemountain.svg" alt="Grand Traverse Flyer"></a>
+            <a href="products4_DrugLabel.html"><img src="Svg/fourmountain.svg" alt="Drug Label"></a>
+            <a class="current-project-number" href="products5_JoeyQuionesPoster.html"><img src="Svg/fivemountain.svg" alt="Joey Quiones Poster"></a>
+            <a href="products6_StickerworthyStickers.html"><img src="Svg/sixmountain.svg" alt="Stickerworthy Stickers"></a>
+        </div>
+
+        <div class="footer-content">
+        <a href="homepage.html" class="logo"> <img src="Svg/Logo.svg" alt="Sierra's Studio Logo"></a>
+            <p class="center">Sierra’s Studio <br>
+                1392 Thronapple St.
+                <br> 269-366-1426 
+                <br>Sierra’sStudio@gmail.com
+            </p>
+        </div>
+
+    </footer>
+    
+    
+</body>
+</html>

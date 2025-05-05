@@ -1,0 +1,22 @@
+<svg width="1440" height="1730" viewBox="0 0 1440 1730" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_155_1328" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-1408" y="0" width="2913" height="1730">
+<path d="M-1408 1730L100.581 0L1505 1730H-1408Z" fill="#C1867B"/>
+</mask>
+<g mask="url(#mask0_155_1328)">
+<rect width="1550" height="1540" transform="translate(1323.85 1248.18) rotate(139.109)" fill="#C1867B"/>
+<rect x="1323.85" y="1248.18" width="62" height="1540" transform="rotate(139.109 1323.85 1248.18)" fill="#EBEDC8"/>
+<rect x="1417.59" y="1167" width="62" height="1540" transform="rotate(139.109 1417.59 1167)" fill="#EBEDC8"/>
+<rect x="1230.11" y="1329.35" width="62" height="1540" transform="rotate(139.109 1230.11 1329.35)" fill="#EBEDC8"/>
+<rect x="1136.37" y="1410.52" width="62" height="1540" transform="rotate(139.109 1136.37 1410.52)" fill="#EBEDC8"/>
+<rect x="1042.63" y="1491.69" width="62" height="1540" transform="rotate(139.109 1042.63 1491.69)" fill="#EBEDC8"/>
+<rect x="948.895" y="1572.87" width="62" height="1540" transform="rotate(139.109 948.895 1572.87)" fill="#EBEDC8"/>
+<rect x="855.156" y="1654.04" width="62" height="1540" transform="rotate(139.109 855.156 1654.04)" fill="#EBEDC8"/>
+<rect x="761.417" y="1735.21" width="62" height="1540" transform="rotate(139.109 761.417 1735.21)" fill="#EBEDC8"/>
+<rect x="667.678" y="1816.39" width="62" height="1540" transform="rotate(139.109 667.678 1816.39)" fill="#EBEDC8"/>
+<rect x="573.939" y="1897.56" width="62" height="1540" transform="rotate(139.109 573.939 1897.56)" fill="#EBEDC8"/>
+<rect x="480.2" y="1978.73" width="62" height="1540" transform="rotate(139.109 480.2 1978.73)" fill="#EBEDC8"/>
+<rect x="386.461" y="2059.9" width="62" height="1540" transform="rotate(139.109 386.461 2059.9)" fill="#EBEDC8"/>
+<rect x="292.723" y="2141.08" width="62" height="1540" transform="rotate(139.109 292.723 2141.08)" fill="#EBEDC8"/>
+<rect x="198.984" y="2222.25" width="62" height="1540" transform="rotate(139.109 198.984 2222.25)" fill="#EBEDC8"/>
+</g>
+</svg>

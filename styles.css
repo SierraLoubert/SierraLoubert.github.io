@@ -1,0 +1,975 @@
+/* colors used in the website {
+    color:#74698c;
+    color:#ebedc8;
+    color:#e2c6c1;
+    color:#c1867b;
+    color:#9ab5c1;
+}
+*/
+
+/*
+@keyframes Mountain Movement{
+    
+    0% {
+        transform: translateX(1px);
+        border-radius: 0%;
+        font-size: 2rem;
+    }
+
+    50% { 
+        
+        border-radius: 100%; 
+       color: white;
+    
+    }
+
+    100%{
+
+        transform: translateX(500px);
+        border-radius: 0%;
+        font-size: 4rem;
+    }
+
+}
+    */
+
+    *{
+        box-sizing: border-box;
+        outline: 1px solid magenta;
+    
+    }
+
+    :root {
+        --purple: #74698C;
+        --pink: #E2C6C1;
+        --yellow: #EBEDC8;
+        --blue: #9ab5c1;
+        --maroon: #c1867b;
+        --white: #FFF;
+        --black: #000;
+    }
+
+
+    body{
+        background-color:#74698c;
+        margin: 0;
+    
+    }
+
+   header{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "menu logo empty"; 
+        width: 100vw;
+        align-items: center;
+        padding: 1rem;
+
+        background: #E2C6C1;
+        border: 1px solid;
+
+    }
+
+
+
+    .logo {
+        grid-area: logo;
+        text-align: center;
+    }
+
+    header img {
+        height: 100%;
+    }
+
+    header img:nth-of-type(2) {
+        justify-self: center;
+    }
+
+    .projectpagessize {
+        color: #FFF;
+        font-family: Poppins;
+        font-style: normal;
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: normal;
+        padding: 1rem;
+
+    }
+
+    h1{
+        color: #FFF;
+        font-family: Poppins;
+        font-style: normal;
+        font-size: 5rem;
+        font-weight: 700;
+        line-height: normal;
+        padding: 1rem;
+    }
+
+    h2{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding:1rem;
+        font-size: 2rem;
+    }
+
+    p{
+        font-family: "Merriweather Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+    }
+
+    .menubackground{
+        background-color: #74698C;
+    }
+
+    .menu-container {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      
+       
+
+    .menutext {
+        font-family: Poppins;
+        font-size:  5vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        display: flex;
+        width: auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+    }
+
+    .menu div {
+        margin-top: -65px;
+    }
+       
+      /* Bottom left text */ 
+      .bottom-left { 
+        position: absolute; }
+
+    /*images and text together*/
+
+    .container {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+
+      .centered {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .image-container {
+        position: relative;
+        width: 500px; /* Set your desired width */
+        height: auto;
+      }
+      
+      .background {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 20px;   /* Adjust as needed */
+        left: 20px;  /* Adjust as needed */
+        width: 100px; /* Size of the overlay image */
+      }
+
+      
+      /* Bottom right text */
+      .text-block {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background-color: #EBEDC8;
+        color: #74698C;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      .text-block-centered {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #EBEDC8;
+        color: #74698C;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+    
+
+    /*Product Page 1*/
+
+   .projectfontsize{
+        font-family: "Merriweather Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+    }
+
+    .images-movex {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 50vh;
+       overflow-x: scroll;
+       gap: 20px;
+       padding: 1rem;
+
+
+    }
+
+    .blue {
+        background-color: #9ab5c1;
+        width: 100vw;
+        height: 36rem;
+        color:#74698c;
+        padding: 1rem;
+
+    }
+
+    .yellow {
+        background-color: #ebedc8;
+        width: 100vw;
+        height: 36rem;
+        color:#74698c;
+        padding: 1rem;
+ 
+    }
+
+    .maroon {
+        background-color: #c1867b;
+        width: 100vw;
+        height: 36rem;
+        color:#74698c;
+        padding: 1rem;
+
+    }
+
+    
+    .productrightmountain {
+        position: relative;
+    }
+
+    .positionrightmountain {
+        position: absolute;
+        right: 0px;
+        top: -126px;
+    }
+
+    .positionrightmountain img {
+        width: 100px;
+        height: auto; 
+      }
+
+    .project-description{
+        background-color: #E2C6C1;
+        width: 100vw;
+        height: 40rem;
+        color:#74698c;
+        padding: 1rem;
+    }
+
+
+    
+ 
+
+
+
+    .footer-content {
+        width: 110%;
+        background: #E2C6C1;
+        color: #74698C;
+        flex: auto;
+        text-align: center;
+        font-family: "Merriweather Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 1rem;
+    
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .more-products {
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        max-width: 800px;
+        align-items: flex-end;
+    
+    }
+
+    .projects a {
+
+        flex-grow: 1;
+        display: flex;
+        align-items: stretch;
+        margin-left: -65px;
+        
+
+    }
+
+    a.current-project-numberone{
+        flex-grow: 2;
+        margin-left: 0px;
+    }
+
+    a.current-project-number{
+        flex-grow: 2;
+        margin-left: -5vw;
+    }
+
+
+    .projects a img {
+        
+        width: 80%;
+        /* display: none; */
+        
+        
+    }
+
+    a.current-project-number img {
+        width: 100%;
+        /* display: block; */
+    }
+
+
+
+
+    .numbered-nav a:nth-of-type(1) {
+        background-color: #74698C;
+    
+        flex-grow: 3;
+        
+    }
+
+
+    /* a.currentpageproject {
+        
+        background-color: blue;
+    } */
+
+    /*Menu for phone*/
+
+    /*.menu_header {
+        width: 393px;
+        height: 84px;
+        padding: 3px 8px;
+        align-items: center;
+        gap: 100px;
+        flex-shrink: 0;
+        background: #E2C6C1;
+    }
+
+    .menu{
+        width: 100vw;
+        height: 55px;
+        flex-shrink: 0; 
+        
+
+    } */
+
+    /*body {
+        margin: 0;
+        font-family: sans-serif;
+      }
+  
+      */
+
+      .menu-button {
+        position: absolute;
+        grid-area: menu;
+        top: 13px;
+        left: 20px;
+        z-index: 3;
+        color:#FFF;
+        font-size: 4rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+  
+    
+      .overlay-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+        background-color: #74698C;
+        color: #FFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.4s ease, visibility 0.4s ease;
+        z-index: 1000;
+  
+      }
+  
+      .overlay-menu.active {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+      }
+  
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .overlay-menu nav a {
+        color: white;
+        font-size: 2rem;
+        text-decoration: none;
+        margin: 20px 0;
+        transition: color 0.3s ease;
+      }
+  
+      .overlay-menu nav a:hover {
+        color: #aaa;
+      }
+  
+      .close-button {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 2.5rem;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+
+    
+
+    /*Contact Page*/
+
+    .contactmountain {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto; 
+        grid-gap: 1rem;
+        width: 100vw;
+        padding: 1rem;
+        background: #E2C6C1;
+        border: 1px solid;
+
+    }
+
+    .contactmountain > div {
+
+        margin-top: -700px;
+    }
+
+    .contactmountain > div:nth-of-type(1) {
+
+        margin-top: 20px;
+    }
+
+    .contactmountain h2 p{
+       color:#74698C;
+
+    }
+
+    .contactmountain div div:nth-child(1){
+
+       
+        overflow: hidden;
+        max-height: 120vw;
+        
+    }
+
+    .contactmountain img {
+        width: 80%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .clientinformation {
+        width: 100%;
+        text-align: left;
+        background-color: #EBEDC8;
+        color: #c1867b;
+        font-size:1.2rem;
+        padding: 1rem;
+        padding-bottom: 700px;
+
+    }
+
+    .clientinformation p {
+        color: #c1867b;
+
+    }
+
+    .clientinformation h2 {
+        color: #74698C;
+
+    }
+
+    .seemore{
+        border-radius: 10px;
+        background: #74698C;
+    }
+
+    fieldset {
+        margin: 0;
+        padding: 0;
+        border: none;
+      }
+      
+      textarea {
+        width: 100vw;
+        height: 100vh;
+        box-sizing: border-box;
+        /* test resize: none;*/
+      }
+
+/*Productspage*/
+
+.Mountains {
+
+    overflow: hidden;
+        
+
+    }
+
+    .Mountains > div {
+
+        margin-top: -700px;
+    }
+
+    .Mountains > div:nth-of-type(1) {
+
+        margin-top: 20px;
+    }
+
+    .Mountains h2 p{
+       color:#74698C;
+
+    }
+
+    .Mountains div div:nth-child(1){
+
+       
+        overflow: hidden;
+        max-height: 120vw;
+        
+    }
+
+    .Mountains img {
+        width: 300%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .container:nth-of-type(odd) div:nth-of-type(1) img {
+
+        object-position: -115vw;
+ 
+    }
+    
+
+    .container:nth-of-type(even) div:nth-of-type(1) img {
+
+        object-position: -80vw;
+
+    }
+
+ 
+    .twogrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "left right"; 
+
+    }
+
+    .left {
+        grid-area: left;
+    }
+
+    .right {
+        grid-area: right;
+    } 
+
+    .product_text-block{
+        width: 100%;
+        text-align: center;
+        background-color: #EBEDC8;
+        color: #74698C;
+        padding: 1rem;
+        padding-bottom: 700px;
+
+    }
+
+    .pink_bg {
+        background-color: var(--pink);
+    }
+    .blue_bg{
+        background-color: var(--blue);  
+    }
+    .yellow_bg{
+        background-color: var(--yellow);
+
+    }
+    .marron_bg{
+        background-color: var(--marroon);
+    }
+
+
+    .button{
+        display: flex;
+        width: 198px;
+        height: 64px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        padding: 10px;
+        margin: 0 5px;
+        border-radius: 10px;
+        background: #74698C;
+        font-family: Poppins;
+        font-size: 2rem;
+        color:#FFF
+
+    
+    }
+
+    .button:link {
+        color: #ebedc8;
+    }
+
+    .button:visited {
+        color: #e2c6c1;
+    }
+
+    .button:hover {
+
+        color: #74698c;
+        background-color: #ebedc8;
+    }
+
+    .button:focus {
+
+        outline: 3px solid #9ab5c1;
+    }
+
+    .button:active {
+
+        background-color: #c1867b;
+    }
+
+/*contact page HERE link*/
+    .contactpagelink{
+        border-radius: 10px;
+        padding: 10px;
+        margin: 0 5px;
+    
+    }
+
+    .contactpage:link {
+        color: #ebedc8;
+    }
+
+    .contactpagelink:visited {
+
+        color: #e2c6c1;
+    }
+
+    .contactpagelink:hover {
+
+        color: #74698c;
+        background-color: #ebedc8;
+    }
+
+    .contactpagelink:focus {
+
+        outline: 3px solid #9ab5c1;
+    }
+
+    .contactpagelink:active {
+
+        background-color: #c1867b;
+    }
+
+    .file{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background: #EBEDC8;
+
+    }
+
+    /*menu buttons*/
+
+    .menutab{
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 0 5px;
+        border-radius: 10px;
+        color: #FFF;
+        font-family: Poppins;
+        font-style: normal;
+        font-size: .5rem;
+        font-weight: 700;
+        line-height: normal;
+        background-color: #74698C;
+        width: 2rem;
+        height: 2rem;
+        position: relative; 
+        text-align: center; 
+        color: white; 
+    
+    }
+
+    .menutab:link {
+        color: #ebedc8;
+    }
+
+    .menutab:visited {
+        color: #e2c6c1;
+    }
+
+    .menutab:hover {
+
+        color: #74698c;
+    }
+
+    .menutab:focus {
+
+        outline: 3px solid #9ab5c1;
+    }
+
+    .menutab:active {
+
+       color: #c1867b;
+    }
+    /*about us page*/
+
+    .aboutusgrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 300px 300px 300px; 
+        grid-gap: 1rem;
+        width: 100vw;
+        height: 100vh; 
+        padding: 1rem;
+        border: 1px solid;
+        overflow: hidden;
+        
+    }
+
+    .aboutus_text-block {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background-color: #EBEDC8;
+        color: #74698C;
+        padding: 1rem;
+
+    
+    }
+    
+
+    .aboutusgrid img {
+        width: 100%;;
+        height: auto;
+        justify-self: center;
+        object-fit: contain;
+        display: block;
+    }
+
+    
+
+    .portait {
+        position: absolute;
+        left: 50%;
+        top: 50%; 
+        transform: translate(-50%, -50%);
+        width: 300px; 
+        height: auto;
+        z-index: 2;
+
+    }
+
+    .leftmountain {
+        position: absolute;
+        left: 35%;
+
+    }
+
+    .rightmountain {
+        position: absolute;
+        left: 50%;
+     
+
+    }
+
+    .bottemmountain {
+        position: absolute;
+        left: 50%;
+        bottom: 30%;
+        transform: translateX(-50%);
+        width: 106vw;
+        height: auto;
+    }
+   
+    .bottemmountain img {
+        position: absolute;
+        left: 50%;
+        bottom: 50%;
+        transform: translateX(-50%);
+        width: 40vw;
+        height: auto;
+    }
+
+
+    .aboutus_container {
+        position: relative;
+        z-index: 1; 
+        text-align: center;
+        color: white;
+    }
+
+    .aboutus_p {
+        font-size: 12px;
+
+    }
+    
+
+
+
+    .purpletext {
+        color: #74698C;
+    }
+
+    /*service page*/
+    .services{
+       /* display: grid;
+        grid-template-columns: 1fr 1fr 1fr; */
+        width: 100vw;
+        height: 84px;
+        padding: 1rem;
+
+    }
+
+    .services h2 p{
+       color:#74698C;
+
+    }
+
+    .followus {
+        color: #FFF;
+        background-color: #c1867b;
+        width: 100vw;
+        height: 84px;
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        font-family: "Merriweather Sans";
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        align-items: left;
+
+    }
+
+    .followus p {
+
+        background-color: #c1867b;
+
+    }
+
+    
+    .followus a {
+
+        font-family: "Merriweather Sans";
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        align-items: flex-end;
+
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        /*project page 1-6*/
+        .project-description{
+            height: 19rem;
+        }
+
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        /*project page 1-6*/
+        .project-description{
+            height: 15rem;
+        }
+    }
+    
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        /*project page 1-6*/
+        .project-description{
+            height: 15rem;
+        }
+    }

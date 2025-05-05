@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Sierra's Studio</title>
+  <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <button class="menu-button" id="openMenu">&#9776;</button>
+        <section class="overlay-menu" id="overlayMenu">
+         <button class="close-button" id="closeMenu">&times;</button>
+         <div class="menu-container">
+             <div>
+                 <img src="Svg/menu/menu_homepagemountain.svg" alt="homepage menu tab">
+             </div>
+             <div class="menu_text-block">
+                 <a class="menutext" class="menutab" href="homepage.html"> <p>Homepage</p></a>
+             </div>
+         </div>
+         <div class="menu-container">
+             <div>
+                 <img src="Svg/menu/menu_aboutmountain.svg" alt="about menu tab">
+             </div>
+             <div class="menu_text-block">
+                 <a class="menutext" class="menutab" href="aboutus_page.html"> <p>About</p></a>
+             </div>
+         </div>
+         <div class="menu-container">
+             <div>
+                 <img src="Svg/menu/menu_servicesmountain.svg" alt="services menu tab">
+             </div>
+             <div class="menu_text-block">
+                 <a class="menutext" class="menutab" href="service_page.html"> <p>Services</p></a>
+             </div>
+         </div>
+         <div class="menu-container">
+             <div>
+                 <img src="Svg/menu/menu_productsmountain.svg" alt="product menu tab">
+             </div>
+             <div class="menu_text-block">
+                 <a class="menutext" class="menutab" href="products.html"> <p>Product</p></a>
+             </div>
+         </div>
+         <div class="menu-container">
+             <div>
+                 <img src="Svg/menu/menu_contactusmountain.svg" alt="contact menu tab">
+             </div>
+             <div class="menu_text-block">
+                 <a class="menutext" class="menutab" href="contactus.html"> <p>Contact</p></a>
+             </div>
+         </div>
+ 
+       </section>
+        <script>
+         const openMenu = document.getElementById('openMenu');
+         const closeMenu = document.getElementById('closeMenu');
+         const overlayMenu = document.getElementById('overlayMenu');
+       
+         openMenu.addEventListener('click', () => {
+           overlayMenu.classList.add('active');
+         });
+       
+         closeMenu.addEventListener('click', () => {
+           overlayMenu.classList.remove('active');
+         });
+       
+         document.addEventListener('keydown', (e) => {
+           if (e.key === 'Escape') {
+             overlayMenu.classList.remove('active');
+           }
+         });
+       </script>
+         <a href="homepage.html" class="logo"> <img src="Svg/Logo.svg" alt="Sierra's Studio Logo"></a>
+     </header>
+    <main>
+        <section class="contactmountain">
+            <div class="aboutusempty_left"></div>
+            <div class= "centered">
+                <img class="container" src="Svg/Contact/mountains/mountain_top.svg" alt="pink mountain">
+                <p class="product_text-block" class="mountaintext">Follow Us At:</p>
+            </div>
+            <div class="aboutusempty_right"></div>
+            <div>
+                <img class="container" src="Svg/Contact/mountains/mountain_left.svg" alt="yellow mountain">
+                <div class= "centered" class="product_text-block">
+                    <img src="Svg/Contact/logos/Facebook.svg" alt="facebook icon">
+                    <p class="mountaintext">@Sierra's_Studio</p>
+                </div>
+            </div>
+            <div class="aboutusempty_center"></div> <!--use the projects format-->
+            <div>
+                <img class="container" src="Svg/Contact/mountains/mountainright.svg" alt="blue mountain">
+                <div class= "centered" class="product_text-block">
+                    <img src="Svg/Contact/logos/instagram.svg" alt="instagram icon">
+                    <p class="mountaintext">@Sierra's Studio</p>
+                </div>
+            </div>
+            <div class="aboutusempty_left"></div>
+            <div>
+                <img class="container" src="Svg/Contact/mountains/mountain_bottem.svg" alt="maroon mountain">
+                <div class="product_text-block">
+                    <img src="Svg/Contact/logos/Email.svg" alt="email icon">
+                    <p class="mountaintext">sierraloubertsstudio@gmail.com</p>
+                </div>
+            </div>
+           
+    </section>
+    
+    <div class="projects pink_bg">
+        <img class="productrightmountain" src="Svg/Contact/mountains/Stripemountain_right.svg" alt="blue and cream mountain">
+  
+        <img class="productrightmountain" src="Svg/Contact/mountains/Stripemountain_left (1).svg" alt="blue and cream mountain">
+
+    </div>
+
+    <br> 
+
+
+    <section class="clientinformation">
+        <div>
+            <h1>Have A Commission</h1>
+            <p>Send us your email so we can get in touch.</p> 
+        </div><br><br>
+        <fieldset
+        action="https://www.form-to-email.com/api/s/3H5qTCBIxhxL"
+        method="POST"
+        >
+        <label>Email address:
+            <input type="email" name="email" required />
+        </label>
+        <br><br>
+        <label>Name:
+            <input type="text" name="name" required />
+        </label>
+        <br><br>
+        <label>Message:
+            <textarea name="message" required></textarea>
+        </label>
+        <br><br><br><br>
+
+            
+            <label for="projectfile">Insert File:</label>
+        <input class= "file" type="file" id="projectfile" name="projectfile"><br><br>
+    
+            <br>
+    
+            <input class="button" class="Submit" type="button" value="Submit">
+    
+        </fieldset>
+    </section>
+
+    </main>
+    <footer>
+        <div class="footer-content">
+        <a href="homepage.html" class="logo"> <img src="Svg/Logo.svg" alt="Sierra's Studio Logo"></a>
+            <p class="center">Sierra's Studio <br>
+                1392 Thronapple St.
+                <br> 269-366-1426 
+                <br>Sierra'sStudio@gmail.com
+            </p>
+        </div>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Sierra's Studio | Sierra's Studio</title>
+  <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <button class="menu-button" id="openMenu">&#9776;</button>
+        <section class="overlay-menu" id="overlayMenu">
+         <button class="close-button" id="closeMenu">&times;</button>
+         <div class="menu-container">
+             <div>
+                 <img src="Svg/menu/menu_homepagemountain.svg" alt="homepage menu tab">
+             </div>
+             <div class="menu_text-block">
+                 <a class="menutext" class="menutab" href="homepage.html"> <p>Homepage</p></a>
+             </div>
+         </div>
+         <div class="menu-container">
+             <div>
+                 <img src="Svg/menu/menu_aboutmountain.svg" alt="about menu tab">
+             </div>
+             <div class="menu_text-block">
+                 <a class="menutext" class="menutab" href="aboutus_page.html"> <p>About</p></a>
+             </div>
+         </div>
+         <div class="menu-container">
+             <div>
+                 <img src="Svg/menu/menu_servicesmountain.svg" alt="services menu tab">
+             </div>
+             <div class="menu_text-block">
+                 <a class="menutext" class="menutab" href="service_page.html"> <p>Services</p></a>
+             </div>
+         </div>
+         <div class="menu-container">
+             <div>
+                 <img src="Svg/menu/menu_productsmountain.svg" alt="product menu tab">
+             </div>
+             <div class="menu_text-block">
+                 <a class="menutext" class="menutab" href="products.html"> <p>Product</p></a>
+             </div>
+         </div>
+         <div class="menu-container">
+             <div>
+                 <img src="Svg/menu/menu_contactusmountain.svg" alt="contact menu tab">
+             </div>
+             <div class="menu_text-block">
+                 <a class="menutext" class="menutab" href="contactus.html"> <p>Contact</p></a>
+             </div>
+         </div>
+ 
+       </section>
+        <script>
+         const openMenu = document.getElementById('openMenu');
+         const closeMenu = document.getElementById('closeMenu');
+         const overlayMenu = document.getElementById('overlayMenu');
+       
+         openMenu.addEventListener('click', () => {
+           overlayMenu.classList.add('active');
+         });
+       
+         closeMenu.addEventListener('click', () => {
+           overlayMenu.classList.remove('active');
+         });
+       
+         document.addEventListener('keydown', (e) => {
+           if (e.key === 'Escape') {
+             overlayMenu.classList.remove('active');
+           }
+         });
+       </script>
+         <a href="homepage.html" class="logo"> <img src="Svg/Logo.svg" alt="Sierra's Studio Logo"></a>
+     </header>
+    <main>
+    <section class="aboutusgrid">
+        <div class="leftmountain"><img src="Svg/aboutus/aboutus_mountainleft.svg" alt="blue mountain"></div>
+        <div class="portait"><img src="Svg/aboutus/Sierra Loubert Image.svg" alt="Image of the Designer"></div >
+        <div  class="rightmountain"><img src="Svg/aboutus/aboutus_mountainright.svg" alt="pink  mountain"></div>
+       
+        <div class="aboutusempty_left"></div>
+        <div  class="container bottemmountain"><img src="Svg/aboutus/Aboutus_descriptionmountain.svg" alt="mountain with description">
+            <div class="text-block-centered">
+                <h1 class="purpletext projectpagessize">About Sierra Loubert</h1>
+                 <p class="aboutus_p">Quiet yet deeply creative, Sierra Loubert is the heart behind Sierra's Studio. Known for her loyalty and keen attention to detail, she finds inspiration in the beauty of nature, the rhythm of music, and the immersive worlds of video games. Whether hiking through the mountains or sketching intricate patterns, she channels her passion into every design she creates.  With a love for illustration and patternmaking, Sierra blends artistry with purpose, crafting visuals that tell unique and meaningful stories. Her work reflects the world she admires—calm, bold, and full of depth.  Rooted in a belief that design should feel as intentional as it looks, Sierra approaches each project with thoughtfulness and care. From branding and packaging to posters and personal commissions, her designs evoke emotion, spark curiosity, and celebrate the tiny details that make something truly stand out.  Sierra's Studio is more than a creative outlet—it is a space where authenticity thrives, ideas evolve, and imagination takes the lead.  Welcome to her creative space—where design and ideas come to life. </p>
+            </div>
+        </div>
+        <div class="aboutusempty_right"></div>
+    </section>
+        </main>
+        
+    <footer>
+       
+          <div class="footer-content">
+          <a href="homepage.html" class="logo"> <img src="Svg/Logo.svg" alt="Sierra's Studio Logo"></a>
+              <p class="center">Sierra's Studio <br>
+                  1392 Thronapple St.
+                  <br> 269-366-1426 
+                  <br>Sierra'sStudio@gmail.com
+              </p>
+          </div>
+
+    </footer>
+    
+    
+</body>
+</html>

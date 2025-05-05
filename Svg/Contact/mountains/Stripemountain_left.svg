@@ -1,0 +1,15 @@
+<svg width="206" height="185" viewBox="0 0 206 185" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_277_1433" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="5" width="206" height="180">
+<path d="M0.71582 184.43L106.536 5.4541L205.049 184.43H0.71582Z" fill="#9AB5C1"/>
+</mask>
+<g mask="url(#mask0_277_1433)">
+<rect width="457.023" height="454.074" transform="translate(-246.188 131.21) rotate(-30.5614)" fill="#9AB5C1"/>
+<rect x="-246.188" y="131.21" width="62" height="1540" transform="rotate(-30.5614 -246.188 131.21)" fill="#EBEDC8"/>
+<rect x="-352.962" y="194.259" width="62" height="1540" transform="rotate(-30.5614 -352.962 194.259)" fill="#EBEDC8"/>
+<rect x="-139.413" y="68.1606" width="62" height="1540" transform="rotate(-30.5614 -139.413 68.1606)" fill="#EBEDC8"/>
+<rect x="-32.6387" y="5.11133" width="62" height="1540" transform="rotate(-30.5614 -32.6387 5.11133)" fill="#EBEDC8"/>
+<rect x="74.1357" y="-57.9377" width="62" height="1540" transform="rotate(-30.5614 74.1357 -57.9377)" fill="#EBEDC8"/>
+<rect x="180.911" y="-120.987" width="62" height="1540" transform="rotate(-30.5614 180.911 -120.987)" fill="#EBEDC8"/>
+</g>
+<path d="M130 44.8887L126.236 49.7362L119.088 37.7951L112.301 48.2175L105.109 37.7951L97.0839 48.9677L90.635 38.7747L79.2039 50.9866C79.1591 50.5277 79.092 50.1125 79 49.7385L84.186 38.9215L102.742 0.283203L113.045 13.7637L117.711 7.73006L128.374 39.9769L129.998 44.8864L130 44.8887Z" fill="#EBEDC8"/>
+</svg>
