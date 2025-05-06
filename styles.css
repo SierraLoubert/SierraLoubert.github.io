@@ -302,11 +302,20 @@
 
     
  
-
+    footer {
+        position: relative;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; */
+        padding: 1rem;
+        background-color: #E2C6C1;
+        outline: 10px solid #c1867b;;
+    }
 
 
     .footer-content {
-        width: 110%;
+        width: 90%;
         background: #E2C6C1;
         color: #74698C;
         flex: auto;
@@ -317,16 +326,12 @@
         font-weight: 400;
         line-height: normal;
         padding: 1rem;
+        margin-left: auto;
+        margin-right: auto;
     
     }
 
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-    }
+
 
     .more-products {
         color: #FFF;
@@ -927,6 +932,39 @@
         position: absolute;
         left: 50%;
      
+
+    }
+
+
+   
+    .fleftmountain, .frightmountain {
+
+        position: absolute;
+        width: max-content;
+
+        top: -300px;
+        overflow: hidden;
+        height: 300px;
+
+
+    }
+
+    .fleftmountain img, .frightmountain img {
+
+        width: 600px;
+    }
+
+
+
+    .fleftmountain {
+
+        left: 0px;
+    }
+
+    .frightmountain {
+
+        right: 0px;
+
 
     }
 
