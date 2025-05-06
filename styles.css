@@ -801,6 +801,22 @@
 
     }
 
+    .contact_text-block{
+        width: 100%;
+        text-align: center;
+        background-color: #EBEDC8;
+        color: #74698C;
+        padding: 1rem 2vw;
+
+    }
+
+    .icons {
+        width: 25%;
+        height: auto;
+        object-fit: cover;
+
+    }
+
     /*menu buttons*/
 
     .menutab{
