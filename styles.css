@@ -53,6 +53,8 @@
     body{
         background-color:#74698c;
         margin: 0;
+
+        /*overflow: hidden; USE AS LAST HOPE*/
     
     }
 
@@ -176,7 +178,7 @@
 
       .centered {
         position: absolute;
-        top: 65%;
+        top: 100%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
@@ -310,7 +312,7 @@
         justify-content: center; */
         padding: 1rem;
         background-color: #E2C6C1;
-        outline: 10px solid #c1867b;;
+        /*outline: 10px solid #c1867b;*/
     }
 
 
@@ -678,10 +680,10 @@
 
     }
 
-    .Mountains div:nth-of-type(6){
-        padding-bottom: -800px;
+    .Mountains .container:nth-of-type(6) .product_text-block {
+        padding-bottom: 50px;
+      }
 
-    }
 
     .product_text-block a {
 
@@ -716,8 +718,8 @@
         background-color: var(--yellow);
 
     }
-    .marron_bg{
-        background-color: var(--marroon);
+    .maroon_bg{
+        background-color: var(--maroon);
     }
 
 
@@ -1004,6 +1006,10 @@
 
     .purpletext {
         color: #74698C;
+    }
+
+    .whitetext {
+        color: #FFF;
     }
 
     /*service page*/
