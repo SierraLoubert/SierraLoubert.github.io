@@ -178,7 +178,7 @@
 
       .centered {
         position: absolute;
-        top: 100%;
+        top: 148%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
@@ -513,7 +513,7 @@
       .overlay-menu img {
 
         position: absolute;
-        top: -68px;
+        top: -15px;
         left: 48%;
         transform: translateX(-50%);
         width: 100vw;
@@ -540,12 +540,8 @@
 
     .contacttext {
         font-size: 4rem;
-        position: relative;
-        top: -300%;
-        right: 33%;
+        margin-top: -160px;
 }
-
-    .contact
 
     .contactmountain {
         display: grid;
@@ -621,9 +617,15 @@
       }
       
       textarea {
-        width: 100vw;
+        width:92vw;
         height: 100vh;
         box-sizing: border-box;
+        color:#9ab5c1;
+        font-family: "Merriweather Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        
         /* test resize: none;*/
       }
 
@@ -659,11 +661,16 @@
         
     }
 
-    .Mountains img {
+    .Mountains img, .justmountains {
         width: 300%;
         height: auto;
         object-fit: cover;
 
+    }
+
+    .justmountains {
+        overflow:hidden;
+    
     }
 
     .container:nth-of-type(odd) div:nth-of-type(1) img {
@@ -776,6 +783,10 @@
     }
 
 /*contact page HERE link*/
+
+    .contactp {
+        font-size:30px;
+    }
     .contactpagelink{
         border-radius: 10px;
         padding: 10px;
@@ -820,27 +831,21 @@
     .contact_text-block{
         width: 100%;
         text-align: center;
-        background-color: #EBEDC8;
         color: #74698C;
         padding: 1rem 2vw;
+        margin-top: -650px;
 
     }
 
+    .contact_text-block img {
+        width: 80px;
+        height: auto;
+      }
  
 
     /*menu buttons*/
 
-    .menutab{
-        display: flex;
-        padding: 10px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        flex-shrink: 0;
-        border-radius: 10px;
-        padding: 10px;
-        margin: 0 5px;
-        border-radius: 10px;
+    .menu-container{
         color: #FFF;
         font-family: Poppins;
         font-style: normal;
@@ -848,33 +853,27 @@
         font-weight: 700;
         line-height: normal;
         background-color: #74698C;
-        width: 2rem;
-        height: 2rem;
-        position: relative; 
-        text-align: center; 
-        color: white; 
-    
     }
 
-    .menutab:link {
+    .menu-container:link {
         color: #ebedc8;
     }
 
-    .menutab:visited {
+    .menu-container:visited {
         color: #e2c6c1;
     }
 
-    .menutab:hover {
+    .menu-container:hover {
 
         color: #74698c;
     }
 
-    .menutab:focus {
+    .menu-container:focus {
 
         outline: 3px solid #9ab5c1;
     }
 
-    .menutab:active {
+    .menu-container:active {
 
        color: #c1867b;
     }
@@ -886,7 +885,7 @@
         grid-template-rows: 300px 300px 300px; 
         grid-gap: 1rem;
         width: 100vw;
-        height: 100vh; 
+        height: 243vh; 
         padding: 1rem;
         border: 1px solid;
         overflow: hidden;
@@ -1103,8 +1102,14 @@
             height: 19rem;
         }
 
+             /*about us*/
+        .centered {
+        top: 111%;
+          }
 
-        
+         .aboutusgrid{
+        height: 152vh; 
+         }
 
     
     .Mountains div div:nth-child(1){
@@ -1115,7 +1120,7 @@
         
     }
 
-    .Mountains img {
+    .Mountains img, .justmountains {
         width: 200%;
 
     }
@@ -1175,10 +1180,27 @@
     h1{
             font-size: 5rem;
     }
- 
+
+     /*menu*/
+     .overlay-menu img {
+
+        position: absolute;
+        top: -68px;
+        left: 48%;
+        transform: translateX(-50%);
+        width: 100vw;
+        height: auto;
+        z-index: -1;
+      }
+
+      /*contact page*/
+
+      textarea {
+        width:96vw;
+      }
 
     }
-
+    
     /* Large devices (laptops/desktops, 992px and up) */
     @media only screen and (min-width: 992px) {
         /*project page 1-6*/
@@ -1189,6 +1211,13 @@
         .project-description{
             height: 19rem;
         }
+
+         /*about us*/
+
+      .aboutusgrid{
+        height: 120vh; 
+      }
+
 
 
         
@@ -1202,7 +1231,7 @@
         
     }
 
-    .Mountains img {
+    .Mountains img, .justmountains {
         width: 100%;
 
     }
@@ -1223,6 +1252,20 @@
     h1{
         font-size: 9rem;
     }
+
+
+     /*menu*/
+     .overlay-menu img {
+
+        position: absolute;
+        top: -130px;
+        left: 48%;
+        transform: translateX(-50%);
+        width: 100vw;
+        height: auto;
+        z-index: -1;
+      }
+
 
 
 
