@@ -71,6 +71,11 @@
 
     }
 
+    .logo {
+        grid-area: logo;
+        text-align: center;
+      }
+
     /* main {
 
         max-width: 1000px;
@@ -80,12 +85,6 @@
 
      } */
 
-
-
-    .logo {
-        grid-area: logo;
-        text-align: center;
-    }
 
     header img {
         height: 100%;
@@ -110,7 +109,7 @@
         color: #FFF;
         font-family: Poppins;
         font-style: normal;
-        font-size: 5rem;
+        font-size: 3rem;
         font-weight: 700;
         line-height: normal;
         padding: 1rem;
@@ -131,6 +130,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        margin: 0rem 1rem;
 
     }
 
@@ -513,8 +513,8 @@
       .overlay-menu img {
 
         position: absolute;
-        top: 0px;
-        left: 50%;
+        top: -68px;
+        left: 48%;
         transform: translateX(-50%);
         width: 100vw;
         height: auto;
@@ -537,6 +537,15 @@
     
 
     /*Contact Page*/
+
+    .contacttext {
+        font-size: 4rem;
+        position: relative;
+        top: -300%;
+        right: 33%;
+}
+
+    .contact
 
     .contactmountain {
         display: grid;
@@ -817,12 +826,7 @@
 
     }
 
-    .icons {
-        width: 25%;
-        height: auto;
-        object-fit: cover;
-
-    }
+ 
 
     /*menu buttons*/
 
@@ -1012,7 +1016,7 @@
         color: #FFF;
     }
 
-    /*service page*/
+    /*index page*/
     .services{
        /* display: grid;
         grid-template-columns: 1fr 1fr 1fr; */
@@ -1062,6 +1066,27 @@
 
     }
 
+    /*index page*/
+    .circle {
+        width: 100vw;
+        height: 100vw;
+        background-color: #9ab5c1;
+        border-radius: 50%;
+    }
+
+    .index_text-block{
+            width: 100%;
+            text-align: center;
+            color: #74698C;
+            padding: 1rem 2vw;
+            padding-bottom: 800px;
+    
+        }
+    
+     .Mountains .container:nth-of-type(5) .index_text-block {
+            padding-bottom: 250px;
+          }
+    
     /* Medium devices (landscape tablets, 768px and up) */
     @media only screen and (min-width: 768px) {
         /*project page 1-6*/
@@ -1116,11 +1141,31 @@
 
     }
 
-    
+    .index_text-block{
 
-
+       
+        padding: 1rem 20vw;
+        padding-bottom: 800px;
 
         
+
+    }
+
+
+    .index_text-block a {
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Mountains .container:nth-of-type(5) .index_text-block {
+        padding-bottom: 50px;
+      }
+
+
+    h1{
+            font-size: 5rem;
+    }
  
 
     }
