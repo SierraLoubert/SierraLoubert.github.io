@@ -868,19 +868,6 @@
 
     }
 
-    .contact_text-block{
-        width: 100%;
-        text-align: center;
-        color: #74698C;
-        padding: 1rem 2vw;
-    }
-
-    .contact_text-block img {
-        width: 80px;
-        height: auto;
-      }
- 
-
     /*menu buttons*/
 
     .menu-container{
@@ -1240,7 +1227,7 @@
       .contacttext {
         font-size: 6rem;
         margin-top: -247px;
-        margin-left: -100px;
+        margin-left: -150px;
         }
 
         .product_text-block img{
