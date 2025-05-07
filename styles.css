@@ -661,12 +661,42 @@
         
     }
 
-    .Mountains img, .justmountains {
+    .Mountains img, .mountainsize{
         width: 300%;
         height: auto;
         object-fit: cover;
 
     }
+
+    .justmountains{
+
+        overflow: hidden;
+            
+    
+        }
+    
+        .justmountains > div {
+    
+            margin-top: -700px;
+        }
+    
+        .justmountains > div:nth-of-type(1) {
+    
+            margin-top: 20px;
+        }
+    
+        .justmountains h2 p{
+           color:#74698C;
+    
+        }
+    
+        .justmountains div div:nth-child(1){
+    
+           
+            overflow: hidden;
+            max-height: 120vw;
+            
+        }
 
     .justmountains {
         overflow:hidden;
@@ -695,6 +725,16 @@
         padding-bottom: 800px;
 
     }
+
+    .product_text-block img{
+        width: 130px;
+        height: auto;
+    }
+
+    .justmountains .container:nth-of-type(4) .product_text-block {
+        padding-bottom: 50px;
+      }
+
 
     .Mountains .container:nth-of-type(6) .product_text-block {
         padding-bottom: 50px;
@@ -1118,7 +1158,7 @@
         
     }
 
-    .Mountains img, .justmountains {
+    .Mountains img, .mountainsize {
         width: 200%;
 
     }
@@ -1193,9 +1233,23 @@
 
       /*contact page*/
 
-      textarea {
+      .textarea {
         width:96vw;
       }
+
+      .contacttext {
+        font-size: 6rem;
+        margin-top: -247px;
+        margin-left: -100px;
+        }
+
+        .product_text-block img{
+        width: 230px;
+        }
+
+        .contactp {
+            font-size:45px;
+        }
 
     }
     
@@ -1216,6 +1270,13 @@
         height: 120vh; 
       }
 
+         /*contact page*/
+    
+          .contacttext {
+            font-size: 6rem;
+            margin-top: -113px;
+            margin-left: -250px;
+            }
 
 
         
@@ -1229,7 +1290,7 @@
         
     }
 
-    .Mountains img, .justmountains {
+    .Mountains img, .mountainsize{
         width: 100%;
 
     }
@@ -1281,6 +1342,10 @@
         .project-description{
             height: 15rem;
         }
+
+        .contacttext {
+            margin-left: -410px;
+            }
 
     
     }
