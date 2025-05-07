@@ -185,7 +185,7 @@
 
       .image-container {
         position: relative;
-        width: 500px; /* Set your desired width */
+        width: 500px; 
         height: auto;
       }
       
@@ -833,8 +833,6 @@
         text-align: center;
         color: #74698C;
         padding: 1rem 2vw;
-        margin-top: -650px;
-
     }
 
     .contact_text-block img {
