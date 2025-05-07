@@ -1067,12 +1067,21 @@
     }
 
     /*index page*/
+
     .circle {
         width: 100vw;
         height: 100vw;
-        background-color: #9ab5c1;
+        background-color: #3498db;
+        color: white;
         border-radius: 50%;
-    }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
 
     .index_text-block{
             width: 100%;
@@ -1211,6 +1220,11 @@
 
     }
 
+    h1{
+        font-size: 9rem;
+    }
+
+
 
 
 
@@ -1226,4 +1240,6 @@
         .project-description{
             height: 15rem;
         }
+
+    
     }
